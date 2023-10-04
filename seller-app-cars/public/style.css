@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  width:100%;
+  height: 250px;
+  border-radius: 15px;
+}
+.car-list .list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.car-list .pagination{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 244);
+  border-radius: 20px;
+  height: 60px;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  border: solid white 2px;
+  padding: 0 20px 0 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+.pagination a{
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  opacity: 0.5;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+  transition: 0.2s;
+}
+.pagination a:hover{
+transform: scale(1.5)
+}
+.search-bar-container{
+  background-color: rgb(235, 235, 244);
+  border-radius: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid white 2px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+.search-bar-container div{
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.search-icon{
+  position: absolute;
+  right: 15px;
+  opacity: 0.5;
+}
+.search-bar{
+  border-radius: 15px;
+  width: 400px;
+  height: 40px;
+  margin-left: 20px;
+  border: solid white 2px;
+}
+.car-card{
+  height: 500px;
+  margin-top: 20px;
+  background-color: rgb(235, 235, 244);
+  padding: 15px;
+  border-radius: 15px;
+  border: solid white 2px;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+  transition: 0.2s;
+}
+.car-card:hover{
+  transform: scale(1.06);
+}
+.name-year{
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0 5px 0;
+}
+.year{
+  font-size: small;
+border: dotted rgb(155, 189, 237);
+border-radius: 10px;
+width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25px;
+font-weight: 600;
+}
+.details{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 100px;
+  margin-bottom: 5px;
+  
+}
+.all-details{
+  padding: 0 10px 0 10px;
+}
+.details p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+  gap: 6px;
+  font-size: small;
+}
+.rate-heart-rent{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.rate-heart-rent button{
+width: 80px;
+height: 30px;
+border-radius: 10px;
+color: white;
+background-color: rgb(63, 140, 247);
+font-weight: bold;
+font-size: small;
+border: none;
+transition: 0.2s;
+}
+.rate-heart-rent button:hover{
+  transform: scale(1.1);
+}
+.heart-rent{
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+.heart-div{
+height: 100%;
+width: 30px;
+color:  rgb(63, 140, 247);
+border-radius:10px ;
+background-color: rgb(211, 218, 239);
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.App{
+  background: white;
+  padding: 0 100px;
+}
+.container{
+  background:rgb(226, 226, 241);
+  padding: 10px 20px 10px 20px;
+}
+.rate{
+  font-size: 25px;
+}
+.per-month{
+  font-weight: 500;
+}
+.icon{
+  color: rgb(63, 140, 247);
+}
+.name{
+  font-size: larger;
+}
+.prev-next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  color: black;
+  
+}
+.current-total-page{
+  font-size: 12px;
+  color: rgb(151, 148, 148);
+  font-weight: 600;
+}
+button{
+  cursor: pointer;
+}
